@@ -1,3 +1,4 @@
+%Code for solving the Simultaneous Equations using G-S algorithm and output a contour plot of the Non-dimensional Theta on the x-y plane.
 clear
 %Input Parameters
 h=100;
@@ -69,7 +70,6 @@ while(maxErr>tol)
   endif
 endwhile
 printf("Converged!\nNumber of Iterations: %d\n",iter)
-%disp(Theta');
 contour(x,y,Theta')
 [C,H]=contour(x,y,Theta');
 title("Contour plot of \Theta on X vs Y")
@@ -79,7 +79,7 @@ ylabel("Y ----->")
 clabel(C,H)
 saveas(1,"Contour-Plot.png")
 T=(q*(L^2)*(Theta)/k) + T_f;
-%disp(T');
+%Calculation of heat convected from the walls
 q_r=h*Dy*(T(m+1,1:n)-T_f);
 q_t=h*Dx*(T(1:m,n+1)-T_f);
 q_l=h*((Dx+Dy)/2)*(T(m+1,n+1)-T_f);
@@ -87,4 +87,5 @@ c=sum(q_r);
 v=sum(q_t);
 sum=c+v+q_l
 Q=q*L*W
+%Comparing with given value of heat generation and calculating error
 error=((sum-Q)/Q)*100
