@@ -1,3 +1,4 @@
+%Code to solve the simultaneous equations(negative x direction) for using TDMA and plot the Non-Dimensional Temperature Theta vs x
 clear
 L=1;
 Pe_c=10;
