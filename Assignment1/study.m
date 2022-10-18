@@ -1,3 +1,4 @@
+%Code to perform the Grid Sensitivity study and plot Non-Dimensional Tip Temperature Theta vs number of nodes.
 clear
 L=1;
 W=1;
