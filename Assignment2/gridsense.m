@@ -1,3 +1,4 @@
+%Code to perform the grid Sensitivity Study
 clear
 L=1;
 Pe_c=10;
