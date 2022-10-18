@@ -1,4 +1,4 @@
-%Code to perform the grid Sensitivity Study
+%Code to perform the grid Sensitivity Study and plot Theta vs number of Nodes
 clear
 L=1;
 Pe_c=10;
