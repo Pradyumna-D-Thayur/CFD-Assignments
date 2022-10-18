@@ -1,3 +1,4 @@
+%Code to perform the parametric study with respect to the Aspect Ratio and plot the 4 corner Non-Dimensional Temperatures vs the Aspect Ratio.
 clear
 a=0.5;
 nodes=15;
