@@ -1,0 +1,5 @@
+Converged!
+Number of Iterations: 134
+sum = 519.58
+Q = 500
+error = 3.9151
