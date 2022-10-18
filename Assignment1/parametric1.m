@@ -1,3 +1,4 @@
+%Code to perform the parametric study with respect to the Biot Number and plot the 4 corner Non-Dimensional Temperatures vs the Biot Number
 clear
 L=1;
 W=1;
